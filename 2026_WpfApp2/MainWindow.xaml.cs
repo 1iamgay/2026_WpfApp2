@@ -16,23 +16,9 @@ namespace _2026_WpfApp2
     /// </summary>
     public partial class MainWindow : Window
     {
-        
-            public MainWindow()
-            {
-                InitializeComponent();
-            }
-
-            private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-            {
-                var targetTextBox = sender as TextBox;
-                var targetStackPanel = targetTextBox.Parent as StackPanel;
-                var targetNameLabel = targetStackPanel.Children[0] as Label;
-                var targetPriceLabel = targetStackPanel.Children[1] as Label;
-            }
-
-            private void OrderButton_Click(object sender, RoutedEventArgs e)
-            {
-
-            }
+        public MainWindow()
+        {
+            InitializeComponent();
         }
     }
+}
