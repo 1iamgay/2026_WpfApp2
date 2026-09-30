@@ -59,7 +59,11 @@
                 <TextBox FontSize="14" VerticalContentAlignment="Center" Margin="100, 0, 0, 0" Height="26" Width="100" HorizontalContentAlignment="Right" TextChanged="TextBox_TextChanged"/>
             </StackPanel>
         </StackPanel>
-        <Button x:Name="OrderButton" Grid.Column="1" Content="訂購" HorizontalAlignment="Left" Margin="50,100,0,0" VerticalAlignment="Top" Height="60" Width="120" FontSize="16"/>
-        <TextBlock Grid.Row="1" Margin="20,10,20,10" Grid.ColumnSpan="2" Background="#FFF9FBE3" FontSize="16"/>
+
+        <!-- 補上 Click 事件關聯 -->
+        <Button x:Name="OrderButton" Grid.Column="1" Content="訂購" HorizontalAlignment="Left" Margin="50,100,0,0" VerticalAlignment="Top" Height="60" Width="120" FontSize="16" Click="OrderButton_Click"/>
+
+        <!-- 補上 Name 屬性與最低高度 -->
+        <TextBlock x:Name="ResultTextBlock" Grid.Row="1" Margin="20,10,20,10" Grid.ColumnSpan="2" Background="#FFF9FBE3" FontSize="16" MinHeight="80"/>
     </Grid>
 </Window>
