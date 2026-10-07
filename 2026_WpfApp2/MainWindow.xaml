@@ -5,8 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2026_WpfApp2"
         mc:Ignorable="d"
-        Title="wpf飲料ver1" Height="581" Width="1098">
-    <Grid>
-        
-    </Grid>
+        Title="wpf飲料master" Height="581" Width="1098">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="400*"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="173*"/>
+			<ColumnDefinition Width="193*"/>
+		</Grid.ColumnDefinitions>
+
+		<StackPanel Grid.Column="0" Background="#FFF7DFDF">
+			<!-- 紅茶大杯 -->
+			<StackPanel Height="36" Margin="5, 5, 5, 5" Background="#FFD5EDED" Orientation="Horizontal">
+				<Label Content="紅茶大杯" FontSize="14" VerticalContentAlignment="Center" Margin="20,0,0,0" Height="26" FontWeight="Bold" Foreground="Brown"/>
+				<Label Content="60元" FontSize="14" VerticalContentAlignment="Center" Margin="20,0,0,0" Height="26" FontWeight="Bold" Foreground="DarkGreen"/>
+				<TextBox FontSize="14" VerticalContentAlignment="Center" Margin="100, 0, 0, 0" Height="26" Width="100" HorizontalContentAlignment="Right"/>
+			</StackPanel>
+
+			<!-- 紅茶小杯 -->
+			<StackPanel Height="36" Margin="5, 5, 5, 5" Background="#FFD5EDED" Orientation="Horizontal">
+				<Label Content="紅茶小杯" FontSize="14" VerticalContentAlignment="Center" Margin="20,0,0,0" Height="26" FontWeight="Bold" Foreground="Brown"/>
+				<Label Content="40元" FontSize="14" VerticalContentAlignment="Center" Margin="20,0,0,0" Height="26" FontWeight="Bold" Foreground="DarkGreen"/>
+				<TextBox FontSize="14" VerticalContentAlignment="Center" Margin="100, 0, 0, 0" Height="26" Width="100" HorizontalContentAlignment="Right"/>
+			</StackPanel>
+
+			<!-- 綠茶大杯 -->
+			<StackPanel Height="36" Margin="5, 5, 5, 5" Background="#FFD5EDED" Orientation="Horizontal">
+				<Label Content="綠茶大杯" FontSize="14" VerticalContentAlignment="Center" Margin="20,0,0,0" Height="26" FontWeight="Bold" Foreground="Brown"/>
+				<Label Content="60元" FontSize="14" VerticalContentAlignment="Center" Margin="20,0,0,0" Height="26" FontWeight="Bold" Foreground="DarkGreen"/>
+				<TextBox FontSize="14" VerticalContentAlignment="Center" Margin="100, 0, 0, 0" Height="26" Width="100" HorizontalContentAlignment="Right"/>
+			</StackPanel>
+
+			<!-- 綠茶小杯 -->
+			<StackPanel Height="36" Margin="5, 5, 5, 5" Background="#FFD5EDED" Orientation="Horizontal">
+				<Label Content="綠茶小杯" FontSize="14" VerticalContentAlignment="Center" Margin="20,0,0,0" Height="26" FontWeight="Bold" Foreground="Brown"/>
+				<Label Content="40元" FontSize="14" VerticalContentAlignment="Center" Margin="20,0,0,0" Height="26" FontWeight="Bold" Foreground="DarkGreen"/>
+				<TextBox FontSize="14" VerticalContentAlignment="Center" Margin="100, 0, 0, 0" Height="26" Width="100" HorizontalContentAlignment="Right"/>
+			</StackPanel>
+
+			<!-- 可樂大杯 -->
+			<StackPanel Height="36" Margin="5, 5, 5, 5" Background="#FFD5EDED" Orientation="Horizontal">
+				<Label Content="可樂大杯" FontSize="14" VerticalContentAlignment="Center" Margin="20,0,0,0" Height="26" FontWeight="Bold" Foreground="Brown"/>
+				<Label Content="50元" FontSize="14" VerticalContentAlignment="Center" Margin="20,0,0,0" Height="26" FontWeight="Bold" Foreground="DarkGreen"/>
+				<TextBox FontSize="14" VerticalContentAlignment="Center" Margin="100, 0, 0, 0" Height="26" Width="100" HorizontalContentAlignment="Right"/>
+			</StackPanel>
+
+			<!-- 可樂小杯 -->
+			<StackPanel Height="36" Margin="5, 5, 5, 5" Background="#FFD5EDED" Orientation="Horizontal">
+				<Label Content="可樂小杯" FontSize="14" VerticalContentAlignment="Center" Margin="20,0,0,0" Height="26" FontWeight="Bold" Foreground="Brown"/>
+				<Label Content="30元" FontSize="14" VerticalContentAlignment="Center" Margin="20,0,0,0" Height="26" FontWeight="Bold" Foreground="DarkGreen"/>
+				<TextBox FontSize="14" VerticalContentAlignment="Center" Margin="100, 0, 0, 0" Height="26" Width="100" HorizontalContentAlignment="Right"/>
+			</StackPanel>
+		</StackPanel>
+
+		<Button x:Name="OrderButton" Grid.Column="1" Content="訂購" HorizontalAlignment="Left" Margin="50,100,0,0" VerticalAlignment="Top" Height="60" Width="120" FontSize="16"/>
+
+		<TextBlock x:Name="ResultTextBlock" Grid.Row="1" Margin="20,10,20,10" Grid.ColumnSpan="2" Background="#FFF9FBE3" FontSize="16" MinHeight="80"/>
+	</Grid>
 </Window>
